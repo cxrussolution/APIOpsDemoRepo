@@ -1,0 +1,22 @@
+_format_version: "3.0"
+services:
+- host: httpbin.org
+  id: 203cbfbd-4293-532a-a9b0-651d16e3b0bc
+  name: httpbin-api
+  path: /
+  plugins: []
+  port: 80
+  protocol: http
+  routes:
+  - id: a187df25-7095-5beb-88f4-17b3348bb9f4
+    methods:
+    - GET
+    name: httpbin-api_request_get
+    paths:
+    - /request
+    plugins: []
+    regex_priority: 200
+    strip_path: true
+    tags: []
+  tags: []
+upstreams: []
